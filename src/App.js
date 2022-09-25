@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <header>
-      <h1>DogsApp</h1>
+        DogsApp
       </header>
       <main>
         <p className="descript">犬の画像を表示するサイトです。</p>
