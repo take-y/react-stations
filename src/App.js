@@ -10,7 +10,11 @@ import './App.css'
 export const App = () => {
   const [dogUrl, setDogUrl] = React.useState('https://images.dog.ceo/breeds/mountain-swiss/n02107574_2033.jpg');
   
-  const handleChange = () => setDogUrl('https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg');
+  const handleChange = () => {
+    fetch('https://dog.ceo/api/breeds/image/random')
+    .then(resp => resp.json())
+    .then(parsedResp => setDogUrl(parsedResp.message));
+  }
   
   return (
     <>
