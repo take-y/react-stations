@@ -18,7 +18,7 @@ export const App = () => {
   
   return (
     <>
-      <header>
+      <header className="header">
         DogsApp
       </header>
       <main>
