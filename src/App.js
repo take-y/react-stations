@@ -17,7 +17,7 @@ export const App = () => {
   }
   
   return (
-    <>
+    <div>
       <header className="header">
         DogsApp
       </header>
@@ -30,6 +30,6 @@ export const App = () => {
           <button onClick={handleChange}>更新</button>
         </div>
       </main>
-    </>
+    </div>
   )
 }
