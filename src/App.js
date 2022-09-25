@@ -23,8 +23,10 @@ export const App = () => {
       </header>
       <main>
         <p className="descript">犬の画像を表示するサイトです。</p>
-        <div className='image-area'>
-          <img src={dogUrl} title="犬の画像" alt="犬の画像" />
+        <div className='app-main'>
+          <div className='image-area'>
+            <img src={dogUrl} title="犬の画像" alt="犬の画像" />          
+          </div>
           <button onClick={handleChange}>更新</button>
         </div>
       </main>
